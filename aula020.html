@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>VueJs - Guia Completo</title>
+</head>
+<body>
+    <div id="app">
+       <input v-on:keyup="onKey">
+    </div>
+
+    <script type="text/javascript">
+        
+       new Vue 
+       ({
+            el: '#app',
+            methods: {
+                onKey: function(event)
+                {
+                    console.log('Tecla ' + event.key + ' pressionada!')
+                }
+            },  
+
+       });
+
+    </script>
+    
+</body>
+</html>
